@@ -1,24 +1,11 @@
-# Lichess PGN Viewer
+# boardmatejs part 4
 
-[![Continuous Integration](https://github.com/lichess-org/pgn-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/lichess-org/pgn-viewer/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/@lichess-org/pgn-viewer)](https://www.npmjs.com/package/@lichess-org/pgn-viewer)
 
-PGN viewer widget, designed to be embedded in content pages.
 
-This won't replace a fully featured [analysis board](https://lichess.org/analysis).
-
-![board with move variation tree](https://raw.githubusercontent.com/lichess-org/pgn-viewer/master/screenshot/tree-comment.png)
-
-## See it in action
-
-- [In a forum post](https://lichess.org/forum/game-analysis/strong-fm-showed-me-a-line-which-i-could-use-one-year-later-against-himself-)
-- [In an opening page](https://lichess.org/opening/Caro-Kann_Defense_Advance_Variation)
-- [In a user blog post](https://lichess.org/@/mfeeney88/blog/analysis-paralysis/NmISTSVM)
-- [As a full-screen game embed](https://lichess.org/embed/game/ErSfVbRk)
 
 ## License
 
-Lichess PGN Viewer is distributed under the **GPL-3.0 license** (or any later version, at your option).
+boardmatejs is distributed under the **GPL-3.0 license** (or any later version, at your option).
 When you use it for your website, your combined work may be distributed only under the GPL.
 **You must release your source code** to the users of your website.
 
@@ -42,8 +29,6 @@ Please read more about GPL for JavaScript on [greendrake.info](https://greendrak
 - custom user moves
 - engine support
 - opening explorer
-
-For these features, use an [analysis board](https://lichess.org/analysis) or [Lichess studies](https://lichess.org/study).
 
 ## Accessibility
 
@@ -74,29 +59,11 @@ npm i @lichess-org/pgn-viewer
 
 ## Usage
 
-```js
-import LichessPgnViewer from '@lichess-org/pgn-viewer';
-
-const lpv = LichessPgnViewer(domElement, {
-  pgn: 'e4 c5 Nf3 d6 e5 Nc6 exd6 Qxd6 Nc3 Nf6',
-});
-
-// lpv is an instance of PgnViewer , providing some utilities such as:
-lpv.goTo('first');
-lpv.goTo('next');
-lpv.flip();
-console.log(lpv.game);
-// see more in pgnViewer.ts
+see chessui in usechatnow
 ```
 
 ### Configuration
-
-```js
-const lpv = LichessPgnViewer(domElement, {
-  pgn: 'e4 c5 Nf3 d6 e5 Nc6 exd6 Qxd6 Nc3 Nf6',
-  // ... more Config
-});
-```
+see chessui by usechatnow
 
 See [all configuration options in the documented source code](https://github.com/lichess-org/pgn-viewer/blob/master/src/config.ts#L3).
 
